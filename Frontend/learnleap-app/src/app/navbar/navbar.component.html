@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <a [routerLink]="['/']" class="logo">KIE </a>
+  <div class="hamburger-menu" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="menu" [ngClass]="{'active': isMenuOpen}">
+    <ul>
+      <li><a [routerLink]="['/announcements']">Announcements</a></li>
+      <li><a [routerLink]="['/assignments']">Assignments</a></li>
+      <li><a [routerLink]="['/courses']">Courses</a></li>
+    </ul>
+  </div>
+</nav>

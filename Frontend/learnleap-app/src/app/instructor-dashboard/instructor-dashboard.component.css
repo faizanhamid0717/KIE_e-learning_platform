@@ -1,0 +1,224 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container>h1{
+    border: 1px solid rgb(218, 218, 218);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+/* Default button styles */
+.btn-group button{
+    color:white;
+    background-color: rgb(55, 55, 91);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.btn-primary button{
+    /* background-color:red; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Change button color when hovered */
+.btn-primary:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+}
+
+/* Change button color when active (clicked) */
+.btn-primary:active {
+    background-color: #c6cfd8; /* Change to your desired active color */
+}
+/* Apply a background color and font to the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Container for the dashboard content */
+.container {
+    padding: 20px;
+    margin: 20px auto;
+    width: auto;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+    width: 10vw;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.dashboard-section>h2{
+    margin-bottom:15px ;
+    font-size: 23px;
+    margin-top: 10px;
+}
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#credits,
+#department {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+thead {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid black;
+}
+
+thead th {
+    text-align: center; /* Center the text in the header cells */
+    padding: 10px;
+    color: black; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #bfccd3; /* Background color for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #abc8da; /* Background color for even rows */
+}
+
+td {
+    text-align: center; /* Center the text in the body cells */
+    padding: 10px;
+    color: black; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+/* Style the buttons with olive color */
+
+
+/* Style the buttons with olive color */
+.btn-olive {
+    background-color: rgb(242, 50, 50);
+    color: white;
+    height: 40px;
+    width: 60px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.btn-danger{
+    background-color: #9db9c1;
+    color: white;
+    height: 40px;
+    width: 60px;
+    border: 0px;
+    border-radius: 10px;
+}
+/* Add some margin between the buttons */
+.dashboard-section button {
+    margin-right: 20px;
+}

@@ -1,0 +1,37 @@
+<!-- 
+<div class="container">
+    <div class="heading">
+        <h2>Announcements</h2>
+    </div>
+
+    <div class="body">
+        <div class="announce-card">
+          <div class="color"></div>
+          <div class="announce">
+              <span>Title</span> 
+              <span>Date</span>
+          </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="heading">
+        <h2>Announcements</h2>
+    </div>
+
+    <div class="body">
+        <div class="announce-card" *ngFor="let announcement of announcements" (click)="toggleAnnouncementDetails(announcement)">
+            <div class="color"></div>
+            <div class="announce">
+                <h3>{{ announcement.announcementTitle }}</h3>
+                <span>{{ announcement.announcementDate }}</span>
+                <div *ngIf="selectedAnnouncement === announcement" class="description">
+                    <p>{{ announcement.announcementDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

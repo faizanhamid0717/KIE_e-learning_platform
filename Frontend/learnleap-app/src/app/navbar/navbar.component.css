@@ -1,0 +1,103 @@
+/* Your CSS styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e2d6;
+  color: black;
+  text-shadow: 0.1em 0.1em 0.10em #e3d89c;
+  padding: 10px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-weight: 700; */
+}
+
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: dotted; /* Add font-weight for bold text */
+  color: black;
+  font-family: cursive;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold; /* Add font-weight for bold text */
+}
+
+.menu button{
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border: 0px;
+  background-color: #e8ddd4;
+  margin-left: 10px;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+/* Style for the hamburger menu content */
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  padding: 10px; /* Add padding to the content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.menu.active ul {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu.active a {
+  color: #fff;
+  margin: 8px 0; /* Add spacing between items */
+  font-size: 18px; /* Adjust font size as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-align: right; /* Align text to the right */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}
